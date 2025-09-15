@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06FF47172D8086FCD4DA1EC0 /* MirrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443CBC536A8AC6C9687D6FE /* MirrorViewModel.swift */; };
+		19B3066AE2BE18164F735037 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188E7C588CD00A0376F2BA /* AudioSessionManager.swift */; };
+		3679D81165A0DC6B2AD48434 /* String+Normalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C87DCF0D8EB90E6BDF7331 /* String+Normalize.swift */; };
+		42A33861EC932D5BC5DD4DD4 /* MainActorBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733CF7346389FA02FF8C581F /* MainActorBox.swift */; };
+		436318AF9FEF3C67877FAF0A /* MirrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F9790A201F45489AE93B4 /* MirrorView.swift */; };
+		6855DF71C3B867A5E6F89D13 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331E23CA5F47BDE6DB72B52 /* SpeechRecognizer.swift */; };
+		757EE938936694F7844181A5 /* Similarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF7C86368CE61C14028135 /* Similarity.swift */; };
+		AD3DB46834D5F0AB70B74080 /* TranslatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC20893E7433FFE5789DD1 /* TranslatorService.swift */; };
+		CAD25247301FECCEBD3A6693 /* SoliloquyMirrorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1F50970813FED08B19443F /* SoliloquyMirrorApp.swift */; };
+		CB00BB0A858E6C2B844413EB /* SpeechAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D184439CA528291DDF72B40 /* SpeechAuthorizer.swift */; };
+		D1B355EDBBBDAD55C9835EEA /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4A6F8EB104A2B64099529E /* TTSService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		005F9790A201F45489AE93B4 /* MirrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorView.swift; sourceTree = "<group>"; };
+		1D184439CA528291DDF72B40 /* SpeechAuthorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechAuthorizer.swift; sourceTree = "<group>"; };
+		50DF7C86368CE61C14028135 /* Similarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Similarity.swift; sourceTree = "<group>"; };
+		62CC20893E7433FFE5789DD1 /* TranslatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorService.swift; sourceTree = "<group>"; };
+		733CF7346389FA02FF8C581F /* MainActorBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActorBox.swift; sourceTree = "<group>"; };
+		755E3B5D02889CF733FDCDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		80188E7C588CD00A0376F2BA /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		A331E23CA5F47BDE6DB72B52 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		AF4A6F8EB104A2B64099529E /* TTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSService.swift; sourceTree = "<group>"; };
+		CA1F50970813FED08B19443F /* SoliloquyMirrorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoliloquyMirrorApp.swift; sourceTree = "<group>"; };
+		D3C87DCF0D8EB90E6BDF7331 /* String+Normalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Normalize.swift"; sourceTree = "<group>"; };
+		F443CBC536A8AC6C9687D6FE /* MirrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorViewModel.swift; sourceTree = "<group>"; };
+		F45EA7BD3B09E6569AC9AC8C /* SoliloquyMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoliloquyMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09AE8C50D1EFB715E44305EE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1D0FC3D24155C40E46558F09 /* Mirror */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0AFF8D8B304A9CAAE92395E9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6F4DC616B393D7AFD4515498 /* App */,
+				09AE8C50D1EFB715E44305EE /* Features */,
+				11E4D301108921927166FD4A /* Services */,
+				1E65ED04AC8A48D8F8777A08 /* Supporting */,
+				0DC99BD8E9B709DE60D89DC9 /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0DC99BD8E9B709DE60D89DC9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				733CF7346389FA02FF8C581F /* MainActorBox.swift */,
+				D3C87DCF0D8EB90E6BDF7331 /* String+Normalize.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		11E4D301108921927166FD4A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80188E7C588CD00A0376F2BA /* AudioSessionManager.swift */,
+				50DF7C86368CE61C14028135 /* Similarity.swift */,
+				1D184439CA528291DDF72B40 /* SpeechAuthorizer.swift */,
+				A331E23CA5F47BDE6DB72B52 /* SpeechRecognizer.swift */,
+				62CC20893E7433FFE5789DD1 /* TranslatorService.swift */,
+				AF4A6F8EB104A2B64099529E /* TTSService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1D0FC3D24155C40E46558F09 /* Mirror */ = {
+			isa = PBXGroup;
+			children = (
+				005F9790A201F45489AE93B4 /* MirrorView.swift */,
+				F443CBC536A8AC6C9687D6FE /* MirrorViewModel.swift */,
+			);
+			path = Mirror;
+			sourceTree = "<group>";
+		};
+		1E65ED04AC8A48D8F8777A08 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				755E3B5D02889CF733FDCDF0 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		6F4DC616B393D7AFD4515498 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F50970813FED08B19443F /* SoliloquyMirrorApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E6D58C56B7329FA6905FC64D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F45EA7BD3B09E6569AC9AC8C /* SoliloquyMirror.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9CE8679A974AFD10F16276F = {
+			isa = PBXGroup;
+			children = (
+				0AFF8D8B304A9CAAE92395E9 /* Sources */,
+				E6D58C56B7329FA6905FC64D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C76C0AC01D33A95137E78C2E /* SoliloquyMirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64FBB225E3A6DE981FC87662 /* Build configuration list for PBXNativeTarget "SoliloquyMirror" */;
+			buildPhases = (
+				8457884B046058872FFB393F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoliloquyMirror;
+			packageProductDependencies = (
+			);
+			productName = SoliloquyMirror;
+			productReference = F45EA7BD3B09E6569AC9AC8C /* SoliloquyMirror.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15EEAC4755101A3C6695DCA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 55D7E4F5F6D134DB82989C6D /* Build configuration list for PBXProject "SoliloquyMirror" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E9CE8679A974AFD10F16276F;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C76C0AC01D33A95137E78C2E /* SoliloquyMirror */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8457884B046058872FFB393F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B3066AE2BE18164F735037 /* AudioSessionManager.swift in Sources */,
+				42A33861EC932D5BC5DD4DD4 /* MainActorBox.swift in Sources */,
+				436318AF9FEF3C67877FAF0A /* MirrorView.swift in Sources */,
+				06FF47172D8086FCD4DA1EC0 /* MirrorViewModel.swift in Sources */,
+				757EE938936694F7844181A5 /* Similarity.swift in Sources */,
+				CAD25247301FECCEBD3A6693 /* SoliloquyMirrorApp.swift in Sources */,
+				CB00BB0A858E6C2B844413EB /* SpeechAuthorizer.swift in Sources */,
+				6855DF71C3B867A5E6F89D13 /* SpeechRecognizer.swift in Sources */,
+				3679D81165A0DC6B2AD48434 /* String+Normalize.swift in Sources */,
+				D1B355EDBBBDAD55C9835EEA /* TTSService.swift in Sources */,
+				AD3DB46834D5F0AB70B74080 /* TranslatorService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15357A4ED2A18A68ECC85AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = K4J8RMCNBG;
+				INFOPLIST_FILE = Sources/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.paw.SoliloquyMirror;
+				PRODUCT_NAME = SoliloquyMirror;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C67ACB19D33CEE711034008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8E474A35A5ACD00FD7EBA539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = K4J8RMCNBG;
+				INFOPLIST_FILE = Sources/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.paw.SoliloquyMirror;
+				PRODUCT_NAME = SoliloquyMirror;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF319C00100C9AD1F4689F66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55D7E4F5F6D134DB82989C6D /* Build configuration list for PBXProject "SoliloquyMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C67ACB19D33CEE711034008 /* Debug */,
+				AF319C00100C9AD1F4689F66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		64FBB225E3A6DE981FC87662 /* Build configuration list for PBXNativeTarget "SoliloquyMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E474A35A5ACD00FD7EBA539 /* Debug */,
+				15357A4ED2A18A68ECC85AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15EEAC4755101A3C6695DCA0 /* Project object */;
+}
